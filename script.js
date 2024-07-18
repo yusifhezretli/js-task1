@@ -1,193 +1,193 @@
-// // 1-dən 10-a qədər ədədlərin cəmini (hasilini) tapın.
+// 1-dən 10-a qədər ədədlərin cəmini (hasilini) tapın.
 
-// let sum = 0;
-// for (let i = 1; i <= 10; i++) {
-//   sum += i;
-// }
-// console.log("Cəmi: " + sum);
+let sum = 0;
+for (let i = 1; i <= 10; i++) {
+  sum += i;
+}
+console.log("Cəmi: " + sum);
 
-// // -------------------------
+// -------------------------
 
-// let say = 1;
-// for (let i = 1; i <= 10; i++) {
-// say *= i;
-// }
-// console.log("Hasil: " + say);
+let say = 1;
+for (let i = 1; i <= 10; i++) {
+say *= i;
+}
+console.log("Hasil: " + say);
 
-// // 1-dən100-ə qədər cüt ədədləri / onların cəmini / hasilini tapın
+// 1-dən100-ə qədər cüt ədədləri / onların cəmini / hasilini tapın
 
-// for (let i = 1; i <= 100; i++) {
-//     if (i % 2 === 0) {
-//       console.log(i);
-//     }
-//   }
-
-
-// let cem = 0;
-
-// // -------------------------
-
-// for (let i = 1; i <= 100; i++) {
-//   if (i % 2 === 0) {
-//     cem += i;
-//   }
-// }
-// console.log("Cüt ədədlərin cəmi: " + cem);
-
-// // -------------------------
-
-// let hasil = 1;
-
-// for (let i = 1; i <= 100; i++) {
-//   if (i % 2 === 0) {
-//     hasil *= i;
-//   }
-// }
-// console.log("Cüt ədədlərin hasil: " + hasil);
+for (let i = 1; i <= 100; i++) {
+    if (i % 2 === 0) {
+      console.log(i);
+    }
+  }
 
 
-// // 3 rəqəmli ədədlərin ədədi ortasını tapın
+let cem = 0;
 
-// let eded = 0;
-// let count = 0;
+// -------------------------
 
-// for (let i = 100; i <= 999; i++) {
-//   eded += i;
-//   count++;
-// }
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 === 0) {
+    cem += i;
+  }
+}
+console.log("Cüt ədədlərin cəmi: " + cem);
 
-// let average = eded / count;
-// console.log("3 rəqəmli ədədlərin ədədi ortası: " + average);
+// -------------------------
 
+let hasil = 1;
 
-// // 3 rəqəmli ədədlərdən 7 və 8-ə bölünən ədədləri tapın
-
-// for (let i = 100; i <= 999; i++) {
-//     if (i % 7 === 0 && i % 8 === 0) {
-//       console.log(i);
-//     }
-//   }
-
-// //   3 rəqəmli ədədlərdən 7 və 8-ə bölünən ədədlərin cəmini tapın
-
-// let sayı = 0;
-
-// for (let i = 100; i <= 999; i++) {
-//     if (i % 7 === 0 && i % 8 === 0 ) {
-//      sayı += i;
-
-//     }
-//   }
-//   console.log(" 3 rəqəmli ədədlərdən 7 və 8-ə bölünən ədədlərin cəmi " + sayı);
-
-// //   3 rəqəmli ədədlərdən 7 və 8-ə bölünən ilk ve son ədədi tapın
-
-// let firstNumber;
-
-// for (let i = 100; i <= 999; i++) {
-//   if (i % 7 === 0 && i % 8 === 0) {
-//     firstNumber = i;
-//     break; 
-//   }
-// }
-
-// console.log("7 və 8-ə bölünən ilk 3 rəqəmli ədəd: " + firstNumber);
-
-// let lastNumber;
-
-// for (let i = 999; i >= 100; i--) {
-//   if (i % 7 === 0 && i % 8 === 0) {
-//     lastNumber = i;
-//     break;
-//   }
-// }
-
-// console.log("7 və 8-ə bölünən son 3 rəqəmli ədəd: " + lastNumber);
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 === 0) {
+    hasil *= i;
+  }
+}
+console.log("Cüt ədədlərin hasil: " + hasil);
 
 
-// // Verilmiş 3 ədəddən ən böyük və ən kiçiyini tapın
+// 3 rəqəmli ədədlərin ədədi ortasını tapın
 
-// let a = 10;
-// let b = 5;
-// let c = 8;
+let eded = 0;
+let count = 0;
 
-// let min = a;
-// let max = a;
+for (let i = 100; i <= 999; i++) {
+  eded += i;
+  count++;
+}
 
-// if (b < min) {
-//   min = b;
-// }
-// if (c < min) {
-//   min = c;
-// }
-
-// if (b > max) {
-//   max = b;
-// }
-// if (c > max) {
-//   max = c;
-// }
-
-// console.log("Ən kiçik ədəd: " + min);
-// console.log("Ən böyük ədəd: " + max);
+let average = eded / count;
+console.log("3 rəqəmli ədədlərin ədədi ortası: " + average);
 
 
-// // İstifadəçi tərəfindən daxil edilən ədədin cüt olub-olmadığını yoxlayın.(Məsələn istifadəçi 12 daxil etdiyi zaman ekrana cütdür, 15 daxil etdiyi zaman təkdir çıxarsın)
+// 3 rəqəmli ədədlərdən 7 və 8-ə bölünən ədədləri tapın
+
+for (let i = 100; i <= 999; i++) {
+    if (i % 7 === 0 && i % 8 === 0) {
+      console.log(i);
+    }
+  }
+
+//   3 rəqəmli ədədlərdən 7 və 8-ə bölünən ədədlərin cəmini tapın
+
+let sayı = 0;
+
+for (let i = 100; i <= 999; i++) {
+    if (i % 7 === 0 && i % 8 === 0 ) {
+     sayı += i;
+
+    }
+  }
+  console.log(" 3 rəqəmli ədədlərdən 7 və 8-ə bölünən ədədlərin cəmi " + sayı);
+
+//   3 rəqəmli ədədlərdən 7 və 8-ə bölünən ilk ve son ədədi tapın
+
+let firstNumber;
+
+for (let i = 100; i <= 999; i++) {
+  if (i % 7 === 0 && i % 8 === 0) {
+    firstNumber = i;
+    break; 
+  }
+}
+
+console.log("7 və 8-ə bölünən ilk 3 rəqəmli ədəd: " + firstNumber);
+
+let lastNumber;
+
+for (let i = 999; i >= 100; i--) {
+  if (i % 7 === 0 && i % 8 === 0) {
+    lastNumber = i;
+    break;
+  }
+}
+
+console.log("7 və 8-ə bölünən son 3 rəqəmli ədəd: " + lastNumber);
 
 
-// let number = prompt("Zəhmət olmasa bir ədəd daxil edin:");
+// Verilmiş 3 ədəddən ən böyük və ən kiçiyini tapın
 
-// if (number % 2 == 0) {
-//   console.log(number + " cütdür.");
-// } else {
-//   console.log(number + " təkdir.");
-// }
+let a = 10;
+let b = 5;
+let c = 8;
 
+let min = a;
+let max = a;
 
+if (b < min) {
+  min = b;
+}
+if (c < min) {
+  min = c;
+}
 
-// // İstifadəçidən iki rəqəm və bir riyazi əməl daxil etməsini tələb edirik
-// let number1 = prompt("Birinci rəqəmi daxil edin:");
-// let number2 = prompt("İkinci rəqəmi daxil edin:");
-// let operator = prompt("Riyazi əməli daxil edin (+, -, *, /):");
+if (b > max) {
+  max = b;
+}
+if (c > max) {
+  max = c;
+}
 
-
-// let result;
-
-// switch (operator) {
-//   case "+":
-//     result = number1 * 1 + number2 * 1;
-//     break;
-//   case "-":
-//     result = number1 * 1 - number2 * 1;
-//     break;
-//   case "*":
-//     result = number1 * 1 * number2 * 1;
-//     break;
-//   case "/":
-//     result = number1 * 1 / number2 * 1;
-//     break;
-//   default:
-//     console.log("Yanlış riyazi əməl ");
-// }
+console.log("Ən kiçik ədəd: " + min);
+console.log("Ən böyük ədəd: " + max);
 
 
-// console.log("Nəticə: " + result);
+// İstifadəçi tərəfindən daxil edilən ədədin cüt olub-olmadığını yoxlayın.(Məsələn istifadəçi 12 daxil etdiyi zaman ekrana cütdür, 15 daxil etdiyi zaman təkdir çıxarsın)
 
 
-// // Daxil edilmiş ədədin bölünəni olan bütün 3 rəqəmli ədədləri çıxarın.
+let number = prompt("Zəhmət olmasa bir ədəd daxil edin:");
 
-// let num = prompt("Bir ədəd daxil edin:");
+if (number % 2 == 0) {
+  console.log(number + " cütdür.");
+} else {
+  console.log(number + " təkdir.");
+}
 
 
-// for (let i = 100; i <= 999; i++) {
+
+// İstifadəçidən iki rəqəm və bir riyazi əməl daxil etməsini tələb edirik
+let number1 = prompt("Birinci rəqəmi daxil edin:");
+let number2 = prompt("İkinci rəqəmi daxil edin:");
+let operator = prompt("Riyazi əməli daxil edin:");
+
+
+let result;
+
+switch (operator) {
+  case "+":
+    result = number1 * 1 + number2 * 1;
+    break;
+  case "-":
+    result = number1 * 1 - number2 * 1;
+    break;
+  case "*":
+    result = number1 * 1 * number2 * 1;
+    break;
+  case "/":
+    result = number1 * 1 / number2 * 1;
+    break;
+  default:
+    console.log("Yanlış riyazi əməl ");
+}
+
+
+console.log("Nəticə: " + result);
+
+
+// Daxil edilmiş ədədin bölünəni olan bütün 3 rəqəmli ədədləri çıxarın.
+
+let num = prompt("Bir ədəd daxil edin:");
+
+
+for (let i = 100; i <= 999; i++) {
   
  
-// if (i % num == 0) {
+if (i % num == 0) {
     
    
-// console.log(i + " daxil edilən ədədə bölünür.");
-//   }
-// }
+console.log(i + " daxil edilən ədədə bölünür.");
+  }
+}
 
 // 12 ədədi hansı 2 ədədin cəmi ola bilər? ( Bütün kombinasiyaları tapın)
 
