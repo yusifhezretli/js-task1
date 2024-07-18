@@ -238,3 +238,95 @@ console.log(numberrr + " ədədinin beşinci dərəcə qüvvəti: " + Power);
 let qalıq = numberrr % 3;
 console.log(numberrr + " ədədinin 3-ə bölündükdə qalan qalığı: " + qalıq);
 
+
+// 18.Daxil edilen temperatura esasen havanin isti, cox isti, soyuq, cox soyuq oldugunu gosterin.
+
+
+let temperatur = prompt ("Temperaturu daxil edin:");
+
+
+if (temperatur < 0) {
+  console.log("Çox soyuq");
+} 
+
+else if (temperatur < 15) {
+  console.log("Soyuq");
+} 
+
+else if (temperatur < 30) {
+  console.log("İsti");
+} 
+
+else if (temperatur >= 30) {
+  console.log("Çox isti");
+} 
+else {
+  alert("Temperatur yanlışdır")
+}
+
+// 19.Daxil edilen rəqəmə görə həftənin günlərini çıxardan program yazın (switch ile yazın.) Meselen: 1 =&gt; bazarertesi,3=&gt; cersenbe (heftenin 7 gunu ucun)
+
+
+let day = prompt("Həftənin gününü daxil edin:");
+
+switch (day) {
+  case "1":
+    console.log("Bazar ertəsi");
+    break;
+  case "2":
+    console.log("Çərşənbə axşamı");
+    break;
+  case "3":
+    console.log("Çərşənbə");
+    break;
+  case "4":
+    console.log("Cümə axşamı");
+    break;
+  case "5":
+    console.log("Cümə");
+    break;
+  case "6":
+    console.log("Şənbə");
+    break;
+  case "7":
+    console.log("Bazar");
+    break;
+  default:
+    console.log("Zəhmət olmasa düzgün bir rəqəm daxil edin (1-dən 7-ə qədər).");
+    break;
+}
+
+
+// Daxil edilen ayların sıra nömresinə əsasən hansı fəsil olduğunu tapın. Meselen : 5 (may ayı 5-cidir) output: Yazfesli alertə çıxarın.
+
+
+let month = prompt("Ayın nömrəsini daxil edin (1-dən 12-ə qədər):");
+let season;
+
+switch (month) {
+  case "12":
+  case "1":
+  case "2":
+    season = "Qış";
+    break;
+  case "3":
+  case "4":
+  case "5":
+    season = "Yaz";
+    break;
+  case "6":
+  case "7":
+  case "8":
+    season = "Yay";
+    break;
+  case "9":
+  case "10":
+  case "11":
+    season = "Payız";
+    break;
+  default:
+    season = "Yanlış ay nömrəsi. Zəhmət olmasa düzgün bir rəqəm daxil edin.";
+    break;
+}
+
+alert("Fəsil: " + season);
